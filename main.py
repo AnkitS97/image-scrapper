@@ -87,12 +87,12 @@ if __name__ == '__main__':
     parser.add_argument("--max_images")
     args = parser.parse_args()
 
-    # driver_path = args.driver
-    # search_term = args.search
-    # max_images = int(args.max_images)
+    driver_path = args.driver
+    search_term = args.search
+    max_images = int(args.max_images)
 
-    driver_path = './chromedriver.exe'
-    search_term = 'cat'
-    max_images = 5
+    # driver_path = './chromedriver.exe'
+    # search_term = 'cat'
+    # max_images = 5
 
     download_images(search=search_term, web_driver_path=driver_path, number_images=max_images)
